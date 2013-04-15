@@ -1,0 +1,99 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/edu/jacsu246/tsea83/gol/lab-simdir
+T_opt
+V2CzC97?GDZXWCLHf<f8Ij0
+04 6 8 work lab_tb behavior 1
+Z1 =1-00d0b7498292-516c06e0-8932d-114f
+Z2 o-quiet -auto_acc_if_foreign -work work
+Z3 n@_opt
+Z4 OE;O;6.5c;42
+Elab
+Z5 w1355151008
+Z6 DPx4 ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
+Z7 DPx4 ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
+Z8 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z9 8../lab.vhd
+Z10 F../lab.vhd
+l0
+L13
+Z11 VYC`Y1i^dY6RmFL7<Yc;4a0
+Z12 OE;C;6.5c;42
+32
+o+acc
+Z13 tExplicit 1
+Z14 !s100 JJ;NHk5SW=Rz`SWclJJ:B3
+Abehavioral
+R6
+R7
+R8
+Z15 DEx4 work 3 lab 0 22 YC`Y1i^dY6RmFL7<Yc;4a0
+l106
+L21
+Z16 V07Q6AA;Q@?7Hi6K][6<MX0
+R12
+32
+Z17 Mx3 4 ieee 14 std_logic_1164
+Z18 Mx2 4 ieee 18 std_logic_unsigned
+Z19 Mx1 4 ieee 15 std_logic_arith
+o+acc
+R13
+Z20 !s100 ^[Nl77BWX>Ef<=ThDBSDm3
+Elab_tb
+R5
+Z21 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+R8
+Z22 8../lab_tb.vhd
+Z23 F../lab_tb.vhd
+l0
+L7
+Z24 VZo?INSN4U?0a;;?G:SiH50
+R12
+32
+o+acc
+R13
+Z25 !s100 nJ@;l[zm^_Z@Y75V5SVUS2
+Abehavior
+R21
+R8
+Z26 DEx4 work 6 lab_tb 0 22 Zo?INSN4U?0a;;?G:SiH50
+l30
+L10
+Z27 VcnPg9V4bDkBnCF8c=EP7z3
+R12
+32
+Z28 Mx2 4 ieee 14 std_logic_1164
+Z29 Mx1 4 ieee 11 numeric_std
+o+acc
+R13
+Z30 !s100 d:<98_PX8@[blC<8=Km:@3
+Eleddriver
+R5
+R21
+R8
+Z31 8../leddriver.vhd
+Z32 F../leddriver.vhd
+l0
+L13
+Z33 Vc96jeeD=[HVz]><ORRBNz1
+R12
+32
+o+acc
+R13
+Z34 !s100 XhiMMa:dhT_IIm`7W@0JH2
+Abehavioral
+R21
+R8
+Z35 DEx4 work 9 leddriver 0 22 c96jeeD=[HVz]><ORRBNz1
+l24
+L20
+Z36 V9`][kREh5oLi;Bf[dg_za3
+R12
+32
+R28
+R29
+o+acc
+R13
+Z37 !s100 BaCfh4DLGP0zE02zXcofR0
