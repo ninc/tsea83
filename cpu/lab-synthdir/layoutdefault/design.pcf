@@ -1,0 +1,100 @@
+//! **************************************************************************
+// Written by: Map M.81d on Tue Apr 16 20:43:09 2013
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Vsync" LOCATE = SITE "P7" LEVEL 1;
+COMP "ca" LOCATE = SITE "T17" LEVEL 1;
+COMP "cb" LOCATE = SITE "T18" LEVEL 1;
+COMP "cc" LOCATE = SITE "U17" LEVEL 1;
+COMP "cd" LOCATE = SITE "U18" LEVEL 1;
+COMP "ce" LOCATE = SITE "M14" LEVEL 1;
+COMP "cf" LOCATE = SITE "N14" LEVEL 1;
+COMP "cg" LOCATE = SITE "L14" LEVEL 1;
+COMP "dp" LOCATE = SITE "M13" LEVEL 1;
+COMP "vgaRed<0>" LOCATE = SITE "U7" LEVEL 1;
+COMP "vgaRed<1>" LOCATE = SITE "V7" LEVEL 1;
+COMP "vgaRed<2>" LOCATE = SITE "N7" LEVEL 1;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "rst" LOCATE = SITE "B8" LEVEL 1;
+COMP "an<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "an<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "an<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "an<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "Hsync" LOCATE = SITE "N6" LEVEL 1;
+COMP "vgaGreen<0>" LOCATE = SITE "P8" LEVEL 1;
+COMP "vgaGreen<1>" LOCATE = SITE "T6" LEVEL 1;
+COMP "vgaGreen<2>" LOCATE = SITE "V6" LEVEL 1;
+COMP "vgaBlue<1>" LOCATE = SITE "R7" LEVEL 1;
+COMP "vgaBlue<2>" LOCATE = SITE "T7" LEVEL 1;
+PIN Mram_bildminne3_pins<20> = BEL "Mram_bildminne3" PINNAME CLKAWRCLK;
+PIN Mram_bildminne3_pins<21> = BEL "Mram_bildminne3" PINNAME CLKBRDCLK;
+PIN Mram_bildminne1_pins<16> = BEL "Mram_bildminne1" PINNAME CLKAWRCLK;
+PIN Mram_bildminne1_pins<17> = BEL "Mram_bildminne1" PINNAME CLKBRDCLK;
+PIN Mram_bildminne2_pins<16> = BEL "Mram_bildminne2" PINNAME CLKAWRCLK;
+PIN Mram_bildminne2_pins<17> = BEL "Mram_bildminne2" PINNAME CLKBRDCLK;
+TIMEGRP sys_clk_pin = BEL "d_79" BEL "d_78" BEL "d_77" BEL "d_76" BEL "d_75"
+        BEL "d_74" BEL "d_73" BEL "d_72" BEL "d_71" BEL "d_70" BEL "d_69" BEL
+        "d_68" BEL "d_67" BEL "d_66" BEL "d_65" BEL "d_64" BEL "d_63" BEL
+        "d_62" BEL "d_61" BEL "d_60" BEL "d_59" BEL "d_58" BEL "d_57" BEL
+        "d_56" BEL "d_55" BEL "d_54" BEL "d_53" BEL "d_52" BEL "d_51" BEL
+        "d_50" BEL "d_49" BEL "d_48" BEL "d_47" BEL "d_46" BEL "d_45" BEL
+        "d_44" BEL "d_43" BEL "d_42" BEL "d_41" BEL "d_40" BEL "d_39" BEL
+        "d_38" BEL "d_37" BEL "d_36" BEL "d_35" BEL "d_34" BEL "d_33" BEL
+        "d_32" BEL "d_31" BEL "d_30" BEL "d_29" BEL "d_28" BEL "d_27" BEL
+        "d_26" BEL "d_25" BEL "d_24" BEL "d_23" BEL "d_22" BEL "d_21" BEL
+        "d_20" BEL "d_19" BEL "d_18" BEL "d_17" BEL "d_16" BEL "d_15" BEL
+        "d_14" BEL "d_13" BEL "d_12" BEL "d_11" BEL "d_10" BEL "d_9" BEL "d_8"
+        BEL "d_7" BEL "d_6" BEL "d_5" BEL "d_4" BEL "d_3" BEL "d_2" BEL "d_1"
+        BEL "d_0" BEL "b_79" BEL "b_78" BEL "b_77" BEL "b_76" BEL "b_75" BEL
+        "b_74" BEL "b_73" BEL "b_72" BEL "b_71" BEL "b_70" BEL "b_69" BEL
+        "b_68" BEL "b_67" BEL "b_66" BEL "b_65" BEL "b_64" BEL "b_63" BEL
+        "b_62" BEL "b_61" BEL "b_60" BEL "b_59" BEL "b_58" BEL "b_57" BEL
+        "b_56" BEL "b_55" BEL "b_54" BEL "b_53" BEL "b_52" BEL "b_51" BEL
+        "b_50" BEL "b_49" BEL "b_48" BEL "b_47" BEL "b_46" BEL "b_45" BEL
+        "b_44" BEL "b_43" BEL "b_42" BEL "b_41" BEL "b_40" BEL "b_39" BEL
+        "b_38" BEL "b_37" BEL "b_36" BEL "b_35" BEL "b_34" BEL "b_33" BEL
+        "b_32" BEL "b_31" BEL "b_30" BEL "b_29" BEL "b_28" BEL "b_27" BEL
+        "b_26" BEL "b_25" BEL "b_24" BEL "b_23" BEL "b_22" BEL "b_21" BEL
+        "b_20" BEL "b_19" BEL "b_18" BEL "b_17" BEL "b_16" BEL "b_15" BEL
+        "b_14" BEL "b_13" BEL "b_12" BEL "b_11" BEL "b_10" BEL "b_9" BEL "b_8"
+        BEL "b_7" BEL "b_6" BEL "b_5" BEL "b_4" BEL "b_3" BEL "b_2" BEL "b_1"
+        BEL "b_0" BEL "a_79" BEL "a_78" BEL "a_77" BEL "a_76" BEL "a_75" BEL
+        "a_74" BEL "a_73" BEL "a_72" BEL "a_71" BEL "a_70" BEL "a_69" BEL
+        "a_68" BEL "a_67" BEL "a_66" BEL "a_65" BEL "a_64" BEL "a_63" BEL
+        "a_62" BEL "a_61" BEL "a_60" BEL "a_59" BEL "a_58" BEL "a_57" BEL
+        "a_56" BEL "a_55" BEL "a_54" BEL "a_53" BEL "a_52" BEL "a_51" BEL
+        "a_50" BEL "a_49" BEL "a_48" BEL "a_47" BEL "a_46" BEL "a_45" BEL
+        "a_44" BEL "a_43" BEL "a_42" BEL "a_41" BEL "a_40" BEL "a_39" BEL
+        "a_38" BEL "a_37" BEL "a_36" BEL "a_35" BEL "a_34" BEL "a_33" BEL
+        "a_32" BEL "a_31" BEL "a_30" BEL "a_29" BEL "a_28" BEL "a_27" BEL
+        "a_26" BEL "a_25" BEL "a_24" BEL "a_23" BEL "a_22" BEL "a_21" BEL
+        "a_20" BEL "a_19" BEL "a_18" BEL "a_17" BEL "a_16" BEL "a_15" BEL
+        "a_14" BEL "a_13" BEL "a_12" BEL "a_11" BEL "a_10" BEL "a_9" BEL "a_8"
+        BEL "a_7" BEL "a_6" BEL "a_5" BEL "a_4" BEL "a_3" BEL "a_2" BEL "a_1"
+        BEL "a_0" BEL "c2" BEL "c1" BEL "b2" BEL "b1" BEL "c0" BEL "a2" BEL
+        "b0" BEL "a1" BEL "a0" BEL "nr_0" BEL "nr_1" BEL "nr_2" BEL "nr_3" BEL
+        "pixel_0" BEL "pixel_1" BEL "xctr_2" BEL "xctr_1" BEL "xctr_5" BEL
+        "xctr_3" BEL "xctr_4" BEL "xctr_8" BEL "xctr_6" BEL "xctr_7" BEL
+        "xctr_9" BEL "ctr_0" BEL "ctr_1" BEL "ctr_2" BEL "ctr_3" BEL "ctr_4"
+        BEL "ctr_5" BEL "ctr_6" BEL "ctr_7" BEL "ctr_8" BEL "ctr_9" BEL
+        "ctr_10" BEL "ctr_11" BEL "ctr_12" BEL "ctr_13" BEL "ctr_14" BEL
+        "ctr_15" BEL "xctr_0" BEL "led/counter_r_17" BEL "led/counter_r_16"
+        BEL "led/counter_r_15" BEL "led/counter_r_14" BEL "led/counter_r_13"
+        BEL "led/counter_r_12" BEL "led/counter_r_11" BEL "led/counter_r_10"
+        BEL "led/counter_r_9" BEL "led/counter_r_8" BEL "led/counter_r_7" BEL
+        "led/counter_r_6" BEL "led/counter_r_5" BEL "led/counter_r_4" BEL
+        "led/counter_r_3" BEL "led/counter_r_2" BEL "led/counter_r_1" BEL
+        "led/counter_r_0" BEL "led/segments_6" BEL "led/segments_5" BEL
+        "led/segments_4" BEL "led/segments_3" BEL "led/segments_2" BEL
+        "led/segments_1" BEL "led/segments_0" BEL "led/an_3" BEL "led/an_2"
+        BEL "led/an_1" BEL "led/an_0" BEL "hs" BEL "vs" BEL "video" BEL
+        "yctr_3" BEL "yctr_1" BEL "yctr_2" BEL "yctr_6" BEL "yctr_4" BEL
+        "yctr_5" BEL "yctr_9" BEL "yctr_7" BEL "yctr_8" BEL "yctr_0" BEL
+        "xctr_4_1" BEL "xctr_3_1" BEL "clk_BUFGP/BUFG" PIN
+        "Mram_bildminne3_pins<20>" PIN "Mram_bildminne3_pins<21>" PIN
+        "Mram_bildminne1_pins<16>" PIN "Mram_bildminne1_pins<17>" PIN
+        "Mram_bildminne2_pins<16>" PIN "Mram_bildminne2_pins<17>";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

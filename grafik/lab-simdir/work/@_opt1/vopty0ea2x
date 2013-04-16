@@ -1,0 +1,111 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/edu/jacsu246/tsea83/gol/lab-simdir
+T_opt
+Z1 V2CzC97?GDZXWCLHf<f8Ij0
+Z2 04 6 8 work lab_tb behavior 1
+Z3 =1-00d0b7498292-516c06e0-8932d-114f
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt
+Z6 OE;O;6.5c;42
+T_opt1
+Z7 VZ[U2Wg?a7m:;YMOd7<9>O2
+R2
+Z8 =1--516d90a6-9bc80-3256
+R4
+Z9 n@_opt1
+R6
+Elab
+Z10 w1366134901
+Z11 DPx17 __model_tech/ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
+Z12 DPx17 __model_tech/ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
+Z13 DPx17 __model_tech/ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+32
+Z14 d/edu/jacsu246/tsea83/tsea83/gol/lab-simdir
+Z15 8../lab.vhd
+Z16 F../lab.vhd
+l0
+L13
+Z17 VYC`Y1i^dY6RmFL7<Yc;4a0
+Z18 OE;C;6.5c;42
+o+acc
+Z19 tExplicit 1
+Z20 !s100 JJ;NHk5SW=Rz`SWclJJ:B3
+Abehavioral
+Z21 DEx47 /edu/jacsu246/tsea83/tsea83/gol/lab-simdir/work 9 leddriver 0 22 c96jeeD=[HVz]><ORRBNz1
+R11
+R12
+R13
+Z22 DEx47 /edu/jacsu246/tsea83/tsea83/gol/lab-simdir/work 3 lab 0 22 YC`Y1i^dY6RmFL7<Yc;4a0
+32
+Z23 Mx3 17 __model_tech/ieee 14 std_logic_1164
+Z24 Mx2 17 __model_tech/ieee 18 std_logic_unsigned
+Z25 Mx1 17 __model_tech/ieee 15 std_logic_arith
+l380
+L21
+Z26 V7jcmW<anB8i1BgJTlC<[70
+R18
+o+acc
+R19
+Z27 !s100 Nz6fRWj5AXVDZFTR?EznE2
+Elab_tb
+Z28 w1366039639
+Z29 DPx17 __model_tech/ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+R13
+32
+R14
+Z30 8../lab_tb.vhd
+Z31 F../lab_tb.vhd
+l0
+L7
+Z32 VZo?INSN4U?0a;;?G:SiH50
+R18
+o+acc
+R19
+Z33 !s100 nJ@;l[zm^_Z@Y75V5SVUS2
+Abehavior
+R22
+R29
+R13
+Z34 DEx47 /edu/jacsu246/tsea83/tsea83/gol/lab-simdir/work 6 lab_tb 0 22 Zo?INSN4U?0a;;?G:SiH50
+32
+Z35 Mx2 17 __model_tech/ieee 14 std_logic_1164
+Z36 Mx1 17 __model_tech/ieee 11 numeric_std
+l30
+L10
+Z37 VcnPg9V4bDkBnCF8c=EP7z3
+Z38 !s100 d:<98_PX8@[blC<8=Km:@3
+R18
+o+acc
+R19
+Eleddriver
+R28
+Z39 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+Z40 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+R14
+Z41 8../leddriver.vhd
+Z42 F../leddriver.vhd
+l0
+L13
+Z43 Vc96jeeD=[HVz]><ORRBNz1
+R18
+32
+o+acc
+R19
+Z44 !s100 XhiMMa:dhT_IIm`7W@0JH2
+Abehavioral
+R29
+R13
+R21
+32
+R35
+R36
+l24
+L20
+Z45 V9`][kREh5oLi;Bf[dg_za3
+R18
+o+acc
+R19
+Z46 !s100 BaCfh4DLGP0zE02zXcofR0

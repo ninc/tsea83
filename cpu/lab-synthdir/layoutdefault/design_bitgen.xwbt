@@ -1,0 +1,7 @@
+INFILE=/edu/jacsu246/tsea83/tsea83/gol/lab-synthdir/layoutdefault/design.ncd
+OUTFILE=/edu/jacsu246/tsea83/tsea83/gol/lab-synthdir/layoutdefault/design.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=/edu/jacsu246/tsea83/tsea83/gol/lab-synthdir/layoutdefault
+LICENSE=WebPack
+USER_INFO=174170573_174170574_174423669
