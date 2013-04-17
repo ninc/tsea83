@@ -230,13 +230,13 @@ process(clk) begin
 			--Lägg in nästa pixel från aktuell rad
 			color_next <= tileminne(pos_tileminne);
 		elsif yctr<480 and xctr<640 and pixel=3 then
---			if pos_tileminne=255 then
---				pos_tileminne <= 0;
---			else	
+			if pos_tileminne=255 then
+				pos_tileminne <= 0;
+			else	
 				--Räkna ut nästa position i tileminnet			
 				pos_tileminne <= 256*conv_integer(aktuell_tile) + 
 				16*conv_integer(y_tileminne) + conv_integer(x_tileminne);
---			end if;
+			end if;
 --		elsif yctr=480 and pixel=3 then
 --			pos_tileminne <= 0;
 		end if;

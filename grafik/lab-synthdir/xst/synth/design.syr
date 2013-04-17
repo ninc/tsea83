@@ -4,7 +4,7 @@ Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to tmpdir
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 3.00 secs
 Total CPU time to Xst completion: 0.07 secs
  
 --> 
@@ -55,10 +55,10 @@ Optimization Goal                  : SPEED
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "/edu/jacsu246/tsea83/tsea83/gol/lab-synthdir/xst/synth/../../../lab.vhd" into library work
+Parsing VHDL file "/edu/jacsu246/tsea83/tsea83/grafik/lab-synthdir/xst/synth/../../../lab.vhd" into library work
 Parsing entity <lab>.
 Parsing architecture <Behavioral> of entity <lab>.
-Parsing VHDL file "/edu/jacsu246/tsea83/tsea83/gol/lab-synthdir/xst/synth/../../../leddriver.vhd" into library work
+Parsing VHDL file "/edu/jacsu246/tsea83/tsea83/grafik/lab-synthdir/xst/synth/../../../leddriver.vhd" into library work
 Parsing entity <leddriver>.
 Parsing architecture <Behavioral> of entity <leddriver>.
 
@@ -75,34 +75,44 @@ Elaborating entity <leddriver> (architecture <Behavioral>) from library <work>.
 =========================================================================
 
 Synthesizing Unit <lab>.
-    Related source file is "/edu/jacsu246/tsea83/tsea83/gol/lab.vhd".
-WARNING:Xst:2999 - Signal 'tile_minne', unconnected in block 'lab', is tied to its initial value.
-    Found 256x8-bit single-port Read Only RAM <Mram_tile_minne> for signal <tile_minne>.
+    Related source file is "/edu/jacsu246/tsea83/tsea83/grafik/lab.vhd".
+WARNING:Xst:2999 - Signal 'tileminne', unconnected in block 'lab', is tied to its initial value.
+WARNING:Xst:2999 - Signal 'grafikminne', unconnected in block 'lab', is tied to its initial value.
+    Found 1024x8-bit single-port Read Only RAM <Mram_tileminne> for signal <tileminne>.
+    Found 2-bit register for signal <aktuell_tile>.
+    Found 1-bit register for signal <pos_grafikminne>.
     Found 8-bit register for signal <color_next>.
-    Found 8-bit register for signal <aktuell_tile_pos>.
+    Found 10-bit register for signal <pos_tileminne>.
     Found 10-bit register for signal <xctr>.
+    Found 4-bit register for signal <x_tileminne>.
     Found 1-bit register for signal <Hsync>.
     Found 10-bit register for signal <yctr>.
+    Found 4-bit register for signal <y_tileminne>.
     Found 1-bit register for signal <Vsync>.
     Found 8-bit register for signal <color>.
     Found 16-bit register for signal <ctr>.
     Found 2-bit register for signal <pixel>.
-    Found 2-bit adder for signal <pixel[1]_GND_5_o_add_0_OUT> created at line 318.
-    Found 8-bit adder for signal <aktuell_tile_pos[7]_GND_5_o_add_11_OUT> created at line 335.
-    Found 10-bit adder for signal <xctr[9]_GND_5_o_add_23_OUT> created at line 353.
-    Found 10-bit adder for signal <yctr[9]_GND_5_o_add_33_OUT> created at line 374.
-    Found 16-bit adder for signal <ctr[15]_GND_5_o_add_53_OUT> created at line 415.
-    Found 10-bit comparator greater for signal <yctr[9]_GND_5_o_LessThan_4_o> created at line 328
-    Found 10-bit comparator greater for signal <xctr[9]_PWR_5_o_LessThan_5_o> created at line 328
+    Found 2-bit adder for signal <pixel[1]_GND_5_o_add_0_OUT> created at line 200.
+    Found 1-bit adder for signal <pos_grafikminne[0]_PWR_5_o_add_11_OUT<0>> created at line 219.
+    Found 11-bit adder for signal <n0156> created at line 237.
+    Found 11-bit adder for signal <n0106> created at line 237.
+    Found 10-bit adder for signal <xctr[9]_GND_5_o_add_31_OUT> created at line 258.
+    Found 4-bit adder for signal <x_tileminne[3]_GND_5_o_add_33_OUT> created at line 262.
+    Found 10-bit adder for signal <yctr[9]_GND_5_o_add_48_OUT> created at line 287.
+    Found 4-bit adder for signal <y_tileminne[3]_GND_5_o_add_49_OUT> created at line 288.
+    Found 16-bit adder for signal <ctr[15]_GND_5_o_add_73_OUT> created at line 329.
+    Found 10-bit comparator greater for signal <yctr[9]_GND_5_o_LessThan_4_o> created at line 213
+    Found 10-bit comparator greater for signal <xctr[9]_PWR_5_o_LessThan_5_o> created at line 213
     Summary:
 	inferred   1 RAM(s).
-	inferred   5 Adder/Subtractor(s).
-	inferred  64 D-type flip-flop(s).
+	inferred   9 Adder/Subtractor(s).
+	inferred  77 D-type flip-flop(s).
 	inferred   2 Comparator(s).
+	inferred   1 Multiplexer(s).
 Unit <lab> synthesized.
 
 Synthesizing Unit <leddriver>.
-    Related source file is "/edu/jacsu246/tsea83/tsea83/gol/leddriver.vhd".
+    Related source file is "/edu/jacsu246/tsea83/tsea83/grafik/leddriver.vhd".
 WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 7-bit register for signal <segments>.
     Found 4-bit register for signal <an>.
@@ -120,7 +130,7 @@ WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and lef
 	inferred  29 D-type flip-flop(s).
 	inferred   4 Multiplexer(s).
 Unit <leddriver> synthesized.
-RTL-Simplification CPUSTAT: 0.03 
+RTL-Simplification CPUSTAT: 0.05 
 RTL-BasicInf CPUSTAT: 0.12 
 RTL-BasicOpt CPUSTAT: 0.00 
 RTL-Remain-Bus CPUSTAT: 0.00 
@@ -130,28 +140,31 @@ HDL Synthesis Report
 
 Macro Statistics
 # RAMs                                                 : 3
+ 1024x8-bit single-port Read Only RAM                  : 1
  16x7-bit single-port Read Only RAM                    : 1
- 256x8-bit single-port Read Only RAM                   : 1
  4x4-bit single-port Read Only RAM                     : 1
-# Adders/Subtractors                                   : 6
+# Adders/Subtractors                                   : 10
+ 1-bit adder                                           : 1
  10-bit adder                                          : 2
+ 11-bit adder                                          : 2
  16-bit adder                                          : 1
  18-bit adder                                          : 1
  2-bit adder                                           : 1
- 8-bit adder                                           : 1
-# Registers                                            : 12
- 1-bit register                                        : 2
- 10-bit register                                       : 2
+ 4-bit adder                                           : 2
+# Registers                                            : 16
+ 1-bit register                                        : 3
+ 10-bit register                                       : 3
  16-bit register                                       : 1
  18-bit register                                       : 1
- 2-bit register                                        : 1
- 4-bit register                                        : 1
+ 2-bit register                                        : 2
+ 4-bit register                                        : 3
  7-bit register                                        : 1
- 8-bit register                                        : 3
+ 8-bit register                                        : 2
 # Comparators                                          : 2
  10-bit comparator greater                             : 2
-# Multiplexers                                         : 4
+# Multiplexers                                         : 5
  1-bit 4-to-1 multiplexer                              : 4
+ 4-bit 2-to-1 multiplexer                              : 1
 
 =========================================================================
 
@@ -162,21 +175,23 @@ Macro Statistics
 
 Synthesizing (advanced) Unit <lab>.
 The following registers are absorbed into counter <pixel>: 1 register on signal <pixel>.
-The following registers are absorbed into counter <aktuell_tile_pos>: 1 register on signal <aktuell_tile_pos>.
+The following registers are absorbed into counter <pos_grafikminne_0>: 1 register on signal <pos_grafikminne_0>.
 The following registers are absorbed into counter <ctr>: 1 register on signal <ctr>.
 The following registers are absorbed into counter <xctr>: 1 register on signal <xctr>.
+The following registers are absorbed into counter <x_tileminne>: 1 register on signal <x_tileminne>.
 The following registers are absorbed into counter <yctr>: 1 register on signal <yctr>.
-INFO:Xst:3040 - The RAM <Mram_tile_minne> will be implemented as a BLOCK RAM, absorbing the following register(s): <color_next> <color>
+The following registers are absorbed into counter <y_tileminne>: 1 register on signal <y_tileminne>.
+INFO:Xst:3040 - The RAM <Mram_tileminne> will be implemented as a BLOCK RAM, absorbing the following register(s): <color_next> <color>
     -----------------------------------------------------------------------
     | ram_type           | Block                               |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
-    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     aspect ratio   | 1024-word x 8-bit                   |          |
     |     mode           | write-first                         |          |
     |     clkA           | connected to signal <clk>           | rise     |
     |     enA            | connected to internal node          | high     |
     |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <aktuell_tile_pos> |          |
+    |     addrA          | connected to signal <pos_tileminne> |          |
     |     diA            | connected to signal <GND>           |          |
     |     doA            | connected to signal <vgaBlue>       |          |
     -----------------------------------------------------------------------
@@ -215,17 +230,20 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # RAMs                                                 : 3
+ 1024x8-bit single-port block Read Only RAM            : 1
  16x7-bit single-port distributed Read Only RAM        : 1
- 256x8-bit single-port block Read Only RAM             : 1
  4x4-bit single-port distributed Read Only RAM         : 1
-# Counters                                             : 6
+# Adders/Subtractors                                   : 2
+ 10-bit adder                                          : 2
+# Counters                                             : 8
+ 1-bit up counter                                      : 1
  10-bit up counter                                     : 2
  16-bit up counter                                     : 1
  18-bit up counter                                     : 1
  2-bit up counter                                      : 1
- 8-bit up counter                                      : 1
-# Registers                                            : 13
- Flip-Flops                                            : 13
+ 4-bit up counter                                      : 2
+# Registers                                            : 25
+ Flip-Flops                                            : 25
 # Comparators                                          : 2
  10-bit comparator greater                             : 2
 # Multiplexers                                         : 4
@@ -236,6 +254,8 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch aktuell_tile_1 hinder the constant cleaning in the block lab.
+   You should achieve better results by setting this init to 0.
 
 Optimizing unit <lab> ...
 
@@ -244,8 +264,6 @@ Optimizing unit <leddriver> ...
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 0) on block lab, actual ratio is 1.
-FlipFlop pixel_0 has been replicated 1 time(s)
-FlipFlop pixel_1 has been replicated 2 time(s)
 
 Final Macro Processing ...
 
@@ -253,8 +271,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 80
- Flip-Flops                                            : 80
+# Registers                                            : 90
+ Flip-Flops                                            : 90
 
 =========================================================================
 
@@ -277,22 +295,23 @@ Top Level Output File Name         : design.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 272
+# BELS                             : 248
 #      GND                         : 1
-#      INV                         : 7
-#      LUT1                        : 57
-#      LUT2                        : 17
-#      LUT3                        : 5
-#      LUT4                        : 17
-#      LUT5                        : 12
-#      LUT6                        : 36
-#      MUXCY                       : 57
+#      INV                         : 6
+#      LUT1                        : 50
+#      LUT2                        : 13
+#      LUT3                        : 2
+#      LUT4                        : 35
+#      LUT5                        : 8
+#      LUT6                        : 28
+#      MUXCY                       : 50
 #      VCC                         : 1
-#      XORCY                       : 62
-# FlipFlops/Latches                : 80
-#      FD                          : 50
-#      FDR                         : 5
-#      FDRE                        : 25
+#      XORCY                       : 54
+# FlipFlops/Latches                : 90
+#      FD                          : 48
+#      FDE                         : 10
+#      FDR                         : 19
+#      FDRE                        : 13
 # RAMS                             : 1
 #      RAMB8BWER                   : 1
 # Clock Buffers                    : 1
@@ -308,15 +327,15 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              80  out of  18224     0%  
- Number of Slice LUTs:                  151  out of   9112     1%  
-    Number used as Logic:               151  out of   9112     1%  
+ Number of Slice Registers:              90  out of  18224     0%  
+ Number of Slice LUTs:                  142  out of   9112     1%  
+    Number used as Logic:               142  out of   9112     1%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    154
-   Number with an unused Flip Flop:      74  out of    154    48%  
-   Number with an unused LUT:             3  out of    154     1%  
-   Number of fully used LUT-FF pairs:    77  out of    154    50%  
+ Number of LUT Flip Flop pairs used:    152
+   Number with an unused Flip Flop:      62  out of    152    40%  
+   Number with an unused LUT:            10  out of    152     6%  
+   Number of fully used LUT-FF pairs:    80  out of    152    52%  
    Number of unique control sets:         4
 
 IO Utilization: 
@@ -349,7 +368,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 81    |
+clk                                | BUFGP                  | 91    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -360,8 +379,8 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 4.829ns (Maximum Frequency: 207.069MHz)
-   Minimum input arrival time before clock: 4.310ns
+   Minimum period: 4.974ns (Maximum Frequency: 201.049MHz)
+   Minimum input arrival time before clock: 4.477ns
    Maximum output required time after clock: 4.650ns
    Maximum combinational path delay: No path found
 
@@ -371,63 +390,63 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 4.829ns (frequency: 207.069MHz)
-  Total number of paths / destination ports: 1848 / 124
+  Clock period: 4.974ns (frequency: 201.049MHz)
+  Total number of paths / destination ports: 1841 / 138
 -------------------------------------------------------------------------
-Delay:               4.829ns (Levels of Logic = 4)
-  Source:            yctr_4 (FF)
-  Destination:       yctr_1 (FF)
+Delay:               4.974ns (Levels of Logic = 4)
+  Source:            xctr_2 (FF)
+  Destination:       yctr_2 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: yctr_4 to yctr_1
+  Data Path: xctr_2 to yctr_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               4   0.447   0.912  yctr_4 (yctr_4)
-     LUT3:I0->O            1   0.205   0.580  GND_5_o_GND_5_o_AND_14_o1_SW0 (N01)
-     LUT6:I5->O           20   0.205   1.197  GND_5_o_GND_5_o_AND_14_o1 (N9)
-     LUT5:I3->O            7   0.203   0.774  Mcount_yctr_val1 (Mcount_yctr_val)
-     LUT4:I3->O            1   0.205   0.000  yctr_1_rstpot (yctr_1_rstpot)
-     FD:D                      0.102          yctr_1
+     FDRE:C->Q             3   0.447   0.995  xctr_2 (xctr_2)
+     LUT5:I0->O            8   0.203   0.907  GND_5_o_GND_5_o_AND_14_o11 (N3)
+     LUT4:I2->O           13   0.203   0.933  GND_5_o_GND_5_o_AND_14_o1 (GND_5_o_GND_5_o_AND_14_o)
+     LUT5:I4->O            7   0.205   0.774  Mcount_y_tileminne_val1 (Mcount_y_tileminne_val)
+     LUT4:I3->O            1   0.205   0.000  yctr_2_rstpot (yctr_2_rstpot)
+     FD:D                      0.102          yctr_2
     ----------------------------------------
-    Total                      4.829ns (1.367ns logic, 3.462ns route)
-                                       (28.3% logic, 71.7% route)
+    Total                      4.974ns (1.365ns logic, 3.609ns route)
+                                       (27.4% logic, 72.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 43 / 42
+  Total number of paths / destination ports: 53 / 50
 -------------------------------------------------------------------------
-Offset:              4.310ns (Levels of Logic = 2)
+Offset:              4.477ns (Levels of Logic = 2)
   Source:            rst (PAD)
-  Destination:       xctr_1 (FF)
+  Destination:       x_tileminne_1 (FF)
   Destination Clock: clk rising
 
-  Data Path: rst to xctr_1
+  Data Path: rst to x_tileminne_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            28   1.222   1.599  rst_IBUF (rst_IBUF)
-     LUT6:I0->O           10   0.203   0.856  Mcount_xctr_val1 (Mcount_xctr_val)
+     IBUF:I->O            34   1.222   1.665  rst_IBUF (rst_IBUF)
+     LUT5:I0->O           14   0.203   0.957  Mcount_x_tileminne_val1 (Mcount_x_tileminne_val)
      FDRE:R                    0.430          xctr_9
     ----------------------------------------
-    Total                      4.310ns (1.855ns logic, 2.455ns route)
-                                       (43.0% logic, 57.0% route)
+    Total                      4.477ns (1.855ns logic, 2.622ns route)
+                                       (41.4% logic, 58.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
   Total number of paths / destination ports: 21 / 21
 -------------------------------------------------------------------------
 Offset:              4.650ns (Levels of Logic = 1)
-  Source:            Mram_tile_minne (RAM)
+  Source:            Mram_tileminne (RAM)
   Destination:       vgaRed<2> (PAD)
   Source Clock:      clk rising
 
-  Data Path: Mram_tile_minne to vgaRed<2>
+  Data Path: Mram_tileminne to vgaRed<2>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAMB8BWER:CLKAWRCLK->DOADO7    1   1.500   0.579  Mram_tile_minne (vgaRed_2_OBUF)
+     RAMB8BWER:CLKAWRCLK->DOADO7    1   1.500   0.579  Mram_tileminne (vgaRed_2_OBUF)
      OBUF:I->O                 2.571          vgaRed_2_OBUF (vgaRed<2>)
     ----------------------------------------
     Total                      4.650ns (4.071ns logic, 0.579ns route)
@@ -443,21 +462,21 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    4.829|         |         |         |
+clk            |    4.974|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.42 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 3.51 secs
  
 --> 
 
 
-Total memory usage is 461184 kilobytes
+Total memory usage is 461808 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    3 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
 Number of infos    :    3 (   0 filtered)
 

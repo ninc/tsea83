@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map M.81d on Tue Apr 16 20:41:15 2013
+// Written by: Map M.81d on Wed Apr 17 12:19:20 2013
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -27,29 +27,32 @@ COMP "ce" LOCATE = SITE "M14" LEVEL 1;
 COMP "cf" LOCATE = SITE "N14" LEVEL 1;
 COMP "vgaRed<2>" LOCATE = SITE "N7" LEVEL 1;
 COMP "cg" LOCATE = SITE "L14" LEVEL 1;
-PIN Mram_tile_minne_pins<10> = BEL "Mram_tile_minne" PINNAME CLKAWRCLK;
-TIMEGRP sys_clk_pin = BEL "pixel_0" BEL "pixel_1" BEL "xctr_1" BEL "xctr_2"
-        BEL "xctr_3" BEL "xctr_4" BEL "xctr_5" BEL "xctr_6" BEL "xctr_7" BEL
-        "xctr_8" BEL "xctr_9" BEL "ctr_0" BEL "ctr_1" BEL "ctr_2" BEL "ctr_3"
-        BEL "ctr_4" BEL "ctr_5" BEL "ctr_6" BEL "ctr_7" BEL "ctr_8" BEL
-        "ctr_9" BEL "ctr_10" BEL "ctr_11" BEL "ctr_12" BEL "ctr_13" BEL
-        "ctr_14" BEL "ctr_15" BEL "led/counter_r_17" BEL "led/counter_r_16"
-        BEL "led/counter_r_15" BEL "led/counter_r_14" BEL "led/counter_r_13"
-        BEL "led/counter_r_12" BEL "led/counter_r_11" BEL "led/counter_r_10"
-        BEL "led/counter_r_9" BEL "led/counter_r_8" BEL "led/counter_r_7" BEL
-        "led/counter_r_6" BEL "led/counter_r_5" BEL "led/counter_r_4" BEL
-        "led/counter_r_3" BEL "led/counter_r_2" BEL "led/counter_r_1" BEL
-        "led/counter_r_0" BEL "led/segments_6" BEL "led/segments_5" BEL
-        "led/segments_4" BEL "led/segments_3" BEL "led/segments_2" BEL
-        "led/segments_1" BEL "led/segments_0" BEL "led/an_3" BEL "led/an_2"
-        BEL "led/an_1" BEL "led/an_0" BEL "vs" BEL "hs" BEL "xctr_0" BEL
-        "yctr_0" BEL "yctr_1" BEL "yctr_2" BEL "yctr_3" BEL "yctr_4" BEL
-        "yctr_5" BEL "yctr_6" BEL "yctr_9" BEL "yctr_7" BEL "yctr_8" BEL
-        "pixel_0_1" BEL "pixel_1_1" BEL "pixel_1_2" BEL "aktuell_tile_pos_0"
-        BEL "aktuell_tile_pos_1" BEL "aktuell_tile_pos_2" BEL
-        "aktuell_tile_pos_3" BEL "aktuell_tile_pos_4" BEL "aktuell_tile_pos_5"
-        BEL "aktuell_tile_pos_6" BEL "aktuell_tile_pos_7" BEL "clk_BUFGP/BUFG"
-        PIN "Mram_tile_minne_pins<10>";
+PIN Mram_tileminne_pins<10> = BEL "Mram_tileminne" PINNAME CLKAWRCLK;
+TIMEGRP sys_clk_pin = BEL "pos_tileminne_0" BEL "pos_tileminne_1" BEL
+        "pos_tileminne_2" BEL "pos_tileminne_3" BEL "pos_tileminne_4" BEL
+        "pos_tileminne_5" BEL "pos_tileminne_6" BEL "pos_tileminne_7" BEL
+        "pos_tileminne_8" BEL "pos_tileminne_9" BEL "pixel_0" BEL "pixel_1"
+        BEL "x_tileminne_1" BEL "x_tileminne_2" BEL "x_tileminne_3" BEL
+        "xctr_3" BEL "xctr_1" BEL "xctr_2" BEL "xctr_4" BEL "xctr_5" BEL
+        "xctr_8" BEL "xctr_6" BEL "xctr_7" BEL "xctr_9" BEL "xctr_0" BEL
+        "led/counter_r_17" BEL "led/counter_r_16" BEL "led/counter_r_15" BEL
+        "led/counter_r_14" BEL "led/counter_r_13" BEL "led/counter_r_12" BEL
+        "led/counter_r_11" BEL "led/counter_r_10" BEL "led/counter_r_9" BEL
+        "led/counter_r_8" BEL "led/counter_r_7" BEL "led/counter_r_6" BEL
+        "led/counter_r_5" BEL "led/counter_r_4" BEL "led/counter_r_3" BEL
+        "led/counter_r_2" BEL "led/counter_r_1" BEL "led/counter_r_0" BEL
+        "led/segments_6" BEL "led/segments_5" BEL "led/segments_4" BEL
+        "led/segments_3" BEL "led/segments_2" BEL "led/segments_1" BEL
+        "led/segments_0" BEL "led/an_3" BEL "led/an_2" BEL "led/an_1" BEL
+        "led/an_0" BEL "hs" BEL "vs" BEL "aktuell_tile_1" BEL
+        "pos_grafikminne_0" BEL "aktuell_tile_0" BEL "x_tileminne_0" BEL
+        "y_tileminne_1" BEL "y_tileminne_0" BEL "ctr_0" BEL "ctr_1" BEL
+        "ctr_2" BEL "ctr_3" BEL "ctr_4" BEL "ctr_5" BEL "ctr_6" BEL "ctr_7"
+        BEL "ctr_8" BEL "ctr_9" BEL "ctr_10" BEL "ctr_11" BEL "ctr_12" BEL
+        "ctr_13" BEL "ctr_14" BEL "y_tileminne_2" BEL "y_tileminne_3" BEL
+        "ctr_15" BEL "yctr_0" BEL "yctr_2" BEL "yctr_1" BEL "yctr_3" BEL
+        "yctr_4" BEL "yctr_7" BEL "yctr_5" BEL "yctr_6" BEL "yctr_8" BEL
+        "yctr_9" BEL "clk_BUFGP/BUFG" PIN "Mram_tileminne_pins<10>";
 TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
 SCHEMATIC END;
 
