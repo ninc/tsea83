@@ -32,7 +32,11 @@ signal color : std_logic_vector(7 downto 0) := "00000000";
 signal color_next : std_logic_vector(7 downto 0) := "00000000";
 subtype color_t is std_logic_vector(7 downto 0);
 type tile_array is array (integer range 0 to 1023) of color_t;
-signal y_tileminne, x_tileminne : std_logic_vector(3 downto 0) := "0000";
+signal xctr,yctr : std_logic_vector(9 downto 0) := "0000000000";
+alias y_tileminne : std_logic_vector(3 downto 0) is yctr(3 downto 0);
+alias x_tileminne : std_logic_vector(3 downto 0) is xctr(3 downto 0);
+alias x_grafikminne : std_logic_vector(6 downto 0) is yctr(9 downto 3);
+alias y_grafikminne : std_logic_vector(6 downto 0) is xctr(9 downto 3);
 signal pos_tileminne : integer range 0 to 1023 := 0;
 signal aktuell_tile : std_logic_vector(1 downto 0) := "10";
 signal tileminne : tile_array :=
@@ -169,14 +173,15 @@ signal tileminne : tile_array :=
 "00000111","00000111","00000111","00000111","00000111","00000111","00000111","00000111",  -- 16
 "00000111","00000111","00000111","00000111","00000111","00000111","00000111","00000111"); -- 16
 
-signal pos_grafikminne : integer range 0 to 1 := 0;
-subtype tile_t is std_logic_vector(1 downto 0);
-type grafik_array is array(integer range 0 to 1) of tile_t;
+signal pos_grafikminne : integer range 0 to 1199 := 0;
+subtype tile_t is std_logic_vector(7 downto 0);
+type grafik_array is array(integer range 0 to 1199) of tile_t;
 signal grafikminne : grafik_array :=
-("00","01");
+
+
 
 --Given kod
-signal xctr,yctr : std_logic_vector(9 downto 0) := "0000000000";
+--signal xctr,yctr : std_logic_vector(9 downto 0) := "0000000000";
 alias rad : std_logic_vector(6 downto 0) is yctr(9 downto 3); -- i bildminnet
 alias kol : std_logic_vector(6 downto 0) is xctr(9 downto 3);  -- i bildminnet
 alias ypix : std_logic_vector(2 downto 0) is yctr(2 downto 0); -- i pixeln
@@ -229,20 +234,12 @@ process(clk) begin
 		if yctr<480 and xctr<640 and pixel=1 then
 			--Lägg in nästa pixel från aktuell rad
 			color_next <= tileminne(pos_tileminne);
-		elsif yctr<480 and xctr<640 and pixel=3 then
-			if pos_tileminne=255 then
-				pos_tileminne <= 0;
-			else	
-				--Räkna ut nästa position i tileminnet			
-				pos_tileminne <= 256*conv_integer(aktuell_tile) + 
-				16*conv_integer(y_tileminne) + conv_integer(x_tileminne);
-			end if;
---		elsif yctr=480 and pixel=3 then
---			pos_tileminne <= 0;
 		end if;
 	end if;
 end process;
-
+--Räkna ut nästa position i tileminnet			
+pos_tileminne <= 256*conv_integer(aktuell_tile) + 
+16*conv_integer(y_tileminne) + conv_integer(x_tileminne);
   
 --Hsync
 process(clk) begin
